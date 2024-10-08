@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="header-title">Loja Online</h1>
+        <div class="header-buttons">
+            <input type="text" id="searchInput" placeholder="Buscar produtos...">
+            <button id="searchBtn">Buscar</button>
+            <button id="btnViewCart">Ver Carrinho</button>
+            <button id="btnLogin">Login</button>
+            <button id="btnRegister">Novo Usuário</button>
+            <button id="btnForgotPassword">Esqueci a Senha</button>
+        </div>
+    </header>
+    
+    <main>
+        <section id="product-list"></section>
+    </main>
+
+    <div id="cart-summary" style="display:none;">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total"></p>
+        <div class="cart-buttons">
+            <button id="clear-cart-btn">Limpar Carrinho</button>
+            <button id="checkout-btn">Finalizar Compra</button>
+            <button id="closeCart">Fechar</button>
+        </div>
+    </div>
+
+    <div id="loginModal" style="display:none;">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Senha" required>
+        <button id="loginSubmit">Entrar</button>
+        <button id="closeLoginModal">Fechar</button>
+    </div>
+
+    <div id="registerModal" style="display:none;">
+        <h2>Cadastrar</h2>
+        <input type="email" id="registerEmail" placeholder="Email" required>
+        <input type="password" id="registerPassword" placeholder="Senha" required>
+        <div class="modal-buttons">
+            <button id="registerSubmit">Cadastrar</button>
+            <button id="closeRegisterModal">Fechar</button>
+        </div>
+    </div>
+
+    <div id="forgotPasswordModal" style="display:none;">
+        <h2>Esqueci a Senha</h2>
+        <input type="email" id="forgotEmail" placeholder="Email" required>
+        <button id="forgotSubmit">Enviar</button>
+        <button id="closeForgotPasswordModal">Fechar</button>
+    </div>
+
+    <button class="back-to-top" id="backToTop" title="Voltar ao Topo"> Voltar ao Topo ⬆️</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
